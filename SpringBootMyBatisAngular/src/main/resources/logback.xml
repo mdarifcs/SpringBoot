@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="file_appndr" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>D:/log/springboot/mybatis_angular.log</file>
+		
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>D:/log/springboot/mybatis_angular_%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+		</rollingPolicy>
+		
+		<encoder>
+			<pattern>%d{MM-dd-yyy HH:mm:ss} %-5level %logger{0}:%L - %msg%n	</pattern>
+		</encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="file_appndr" />
+	</root>
+</configuration>

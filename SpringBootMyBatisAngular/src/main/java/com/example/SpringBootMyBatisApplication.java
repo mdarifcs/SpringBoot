@@ -9,4 +9,5 @@ public class SpringBootMyBatisApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootMyBatisApplication.class, args);
 	}
+	
 }
