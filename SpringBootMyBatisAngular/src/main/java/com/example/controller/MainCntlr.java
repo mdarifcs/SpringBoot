@@ -16,7 +16,6 @@ import com.example.mappers.EmployeeMapper;
 import com.example.vo.Employee;
 
 @Controller
-@MapperScan("com.example.mappers")
 public class MainCntlr {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MainCntlr.class);
